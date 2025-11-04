@@ -1,9 +1,9 @@
 Name: YOUR NAME HERE
 
-| Date    |  Time  |                                     Update |
-|:--------|:------:|-------------------------------------------:|
-| April 5 | 9-10pm | I tried to write abstract, efficient code. |
-|         |        |                                            |
+| Date       |   Time    |                                                                                                                                                                                                                                                                                                                                                                                          Update |
+|:-----------|:---------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| November 3 | 7-7:30 PM | I remember that when we worked on the first problem set where we had to decipher codes, Mr. Blick talked about how dingbats were stored. The number that you enter makes the code only look through a certain section of the dingbat database, meaning that you don't have to have a map of every single dingbat. I tried to see if that was possible for barcodes, but I didn't find anything. |
+|            |           |                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.
