@@ -24,4 +24,14 @@ public class Finder {
         // TODO: Complete the query() function!
         return INVALID;
     }
+
+    // public int hash (String productName, String companyName)
+    // for every letter
+    // multiply the Radix by the current index of the string
+    // modulus each time by a relatively small number (maybe 500 million)
+    // Do the same thing for the companyName
+    // Then find some way to keep the number small but have a unique combination of both hashes
+    // create a map with length of highest possible combination value
+    // in each index have companyName, productName
+    // return the correct substring
 }
