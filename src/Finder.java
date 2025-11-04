@@ -24,7 +24,11 @@ public class Finder {
         // TODO: Complete the query() function!
         return INVALID;
     }
+    // Solution Two
+    //
 
+
+    // Solution One
     // public int hash (String productName, String companyName)
     // for every letter
     // multiply the Radix by the current index of the string
