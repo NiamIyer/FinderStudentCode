@@ -6,36 +6,38 @@ import java.io.IOException;
  * for Adventures in Algorithms
  * At Menlo School in Atherton, CA
  *
- * Completed by: [YOUR NAME HERE]
+ * Completed by: [Niam]
  **/
 
 public class Finder {
 
     private static final String INVALID = "INVALID KEY";
+    public static final int RADIX = 256;
+    private HashDataSet hashMap;
 
-    public Finder() {}
+    public Finder() {
+        hashMap = new HashDataSet();
+    }
 
     public void buildTable(BufferedReader br, int keyCol, int valCol) throws IOException {
-        // TODO: Complete the buildTable() function!
+        // Reads the line in the csv file and adds it to the hashMap
+        String line = br.readLine();
+        while (line != (null)) {
+            String[] values = line.split(",");
+            hashMap.add(values[keyCol], values[valCol]);
+            line = br.readLine();
+        }
         br.close();
+
+
     }
 
     public String query(String key){
-        // TODO: Complete the query() function!
-        return INVALID;
+        // Uses the get method to find the value associated with the key
+        String value = hashMap.get(key);
+        if (value == null) {
+            return INVALID;
+        }
+        return value;
     }
-    // Solution Two
-    //
-
-
-    // Solution One
-    // public int hash (String productName, String companyName)
-    // for every letter
-    // multiply the Radix by the current index of the string
-    // modulus each time by a relatively small number (maybe 500 million)
-    // Do the same thing for the companyName
-    // Then find some way to keep the number small but have a unique combination of both hashes
-    // create a map with length of highest possible combination value
-    // in each index have companyName, productName
-    // return the correct substring
 }
